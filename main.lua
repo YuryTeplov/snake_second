@@ -1,6 +1,12 @@
+local Scene = require("objects.scene")
+
 function love.load()
-    love.window.setTitle("LÖVE 2D Test")
+
+    local scene = Scene:new("kkkk")
+
+    love.window.setTitle(scene:getText())
     love.graphics.setBackgroundColor(0.1, 0.1, 0.1)  -- Set background color to dark grey
+
 end
 
 function love.draw()
